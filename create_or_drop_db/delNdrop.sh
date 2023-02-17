@@ -1,0 +1,8 @@
+psql database_name --echo-all <<-END 2>&1 | tee delNdrop.log
+
+DROP TABLE Links;
+DROP TABLE Evaluation;
+DROP TABLE Topics;
+DROP TABLE WebPages;
+
+END
